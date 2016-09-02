@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/device_8050.mk
+    $(LOCAL_DIR)/full_8050.mk

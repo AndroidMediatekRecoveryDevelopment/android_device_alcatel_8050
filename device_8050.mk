@@ -7,9 +7,11 @@ $(call inherit-product-if-exists, vendor/alcatel/8050/8050-vendor.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/alcatel/8050/overlay
 
+LOCAL_PATH := device/alcatel/8050
+
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-	LOCAL_KERNEL := device/alcatel/8050/kernel
+	LOCAL_KERNEL := $(LOCAL_PATH)/prebuilt/kernel
 else
 	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
